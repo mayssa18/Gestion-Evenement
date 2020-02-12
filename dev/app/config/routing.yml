@@ -1,0 +1,24 @@
+event_contrat:
+    resource: "@EventBundle/Controller/ContratController.php"
+    type:     annotation
+
+event_sponsor:
+    resource: "@EventBundle/Controller/SponsorController.php"
+    type:     annotation
+
+event_evenement:
+    resource: "@EventBundle/Controller/EvenementController.php"
+    type:     annotation
+
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
+    prefix:   /
+event:
+    resource: "@EventBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

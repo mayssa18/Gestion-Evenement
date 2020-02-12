@@ -1,0 +1,72 @@
+{% extends 'baseadmin.html.twig' %}
+
+{% block container %}
+    <div class="pcoded-content">
+        <div class="pcoded-inner-content">
+
+            <div class="main-body">
+                <div class="page-wrapper">
+
+                    <div class="page-header">
+                        <div class="row align-items-end">
+                            <div class="col-lg-8">
+                                <div class="page-header-title">
+                                    <div class="d-inline">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="page-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <div class="card">
+                                    <div class="card-header">
+
+                                    </div>
+                                    <div class="card-block">
+                                        <h4 >Add sponsor</h4>
+
+                                        {{ form_start(form, {'method': 'post', 'action': path('sponsor_new') }) }}
+                                        <div class="form-group row">
+                                            <div class="col-sm-10">
+                                                {{ form_row(form.nomsponsor,{ 'attr': {'class': 'form-control form-control-round','placeholder': 'Nom du sponsor','required' :'1'} }) }}
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-sm-10">
+                                                {{ form_row(form.typeprod,{ 'attr': {'class': 'form-control form-control-round','placeholder': 'Type de produit','required' :'1'} }) }}
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" value="Create" class="btn btn-grd-danger"/> Add</button>
+
+
+                                        {{ form_end(form) }}
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div id="styleSelector">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock container %}
+
+
+
+

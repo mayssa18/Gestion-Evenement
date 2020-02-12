@@ -1,0 +1,91 @@
+{% extends 'baseadmin.html.twig' %}
+
+
+
+{% block container %}
+<div class="pcoded-content">
+    <div class="pcoded-inner-content">
+
+        <div class="main-body">
+            <div class="page-wrapper">
+
+                <div class="page-header">
+                    <div class="row align-items-end">
+                        <div class="col-lg-8">
+                            <div class="page-header-title">
+                                <div class="d-inline">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="page-header-breadcrumb">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="page-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <div class="card">
+                                <div class="card-header table-card-header">
+                                    <h4>Event list</h4>
+                                </div>
+                                <div class="card-block">
+                                    <div class="dt-responsive table-responsive">
+                                        <table id="basic-btn" class="table table-striped table-bordered nowrap">
+                                            <thead>
+                                            <tr>
+
+                                                <th>Nom</th>
+                                                <th>Type du produit</th>
+
+                                                <th>Delete</th>
+                                                <th>Edit</th>
+
+
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            {% for sponsor in sponsors %}
+                                                <tr>
+
+                                                    <td>{{ sponsor.nomsponsor }}</td>
+                                                    <td>{{ sponsor.typeprod }}</td>
+
+
+
+
+                                                    <td>
+                                                        <a href="{{ path('deletesponor', { 'id': sponsor.id }) }}" class="btn btn-grd-danger" >Delete</a>
+
+                                                    </td>
+                                                    <td>
+
+                                                        <a href="{{ path('sponsor_edit', { 'id': sponsor.id }) }}" class="btn btn-grd-success">Edit</a>
+                                                    </td>
+
+                                                </tr>
+                                            {% endfor %}
+
+
+                                            </tbody>
+
+                                        </table>
+
+                                        <ul>
+                                            <li>
+                                                <a href="{{ path('sponsor_new') }}">Create a new sponsor</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            {% endblock %}

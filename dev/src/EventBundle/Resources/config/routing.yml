@@ -1,0 +1,24 @@
+event_homepage:
+    path:     /
+    defaults: { _controller: EventBundle:Default:index }
+showadmin:
+    path:     /showadmin
+    defaults: { _controller: EventBundle:Evenement:showadmin}
+
+delete:
+    path:     /delete/{id}
+    defaults: { _controller: EventBundle:Evenement:delete}
+
+deletesponor:
+    path:     /deletesponor/{id}
+    defaults: { _controller: EventBundle:Sponsor:deletesponor}
+
+
+afficher:
+    path:     /afficher/{id}
+    defaults: { _controller: EventBundle:Evenement:afficher}
+read:
+    path:     /read
+    defaults: { _controller: EventBundle:Evenement:read}
+
+

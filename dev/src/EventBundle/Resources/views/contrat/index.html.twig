@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Contrats list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Numcontrat</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for contrat in contrats %}
+            <tr>
+                <td><a href="{{ path('contrat_show', { 'id': contrat.id }) }}">{{ contrat.id }}</a></td>
+                <td>{{ contrat.numcontrat }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('contrat_show', { 'id': contrat.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('contrat_edit', { 'id': contrat.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('contrat_new') }}">Create a new contrat</a>
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,152 @@
+{% extends 'base.html.twig' %}
+
+
+{% block container %}
+<body class="events-page">
+<!-- Begin preloader -->
+<div class="preloader-container">
+    <div class="dash dash-one"></div>
+    <div class="dash dash-two"></div>
+    <div class="dash dash-three"></div>
+    <div class="dash dash-four"></div>
+</div>
+<section class="page-name color-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-name-content">
+                    <h1>Our Events</h1>
+                    <ul class="bread-crumbs">
+                        <li><a href="index-2.html">Home</a></li>
+                        <li><p>Our Events</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End page name -->
+<!-- Begin events content -->
+<main class="events-content">
+    <div class="event-list-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-title">
+                        <h2>Meet Our Events</h2>
+                        <p>Duis sed ultricies dolor. Donec at velit nec tellus mattis consectetur id eget justo. Proin scelerisque nunc quis aliquam rhoncus. Sed tristique hendrerit odio ac facilisis. In vulputate ligula sed convallis ullamcorper. Nulla ornare, ipsum vitae tempus facilisis, mi arcu cursus mauris, non feugiat elit justo non tortor.</p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <form action="#" class="sort-form">
+                        <div class="input-wrap">
+                            <label for="date">Events From</label>
+                            <input type="text" class="choose-data" name="date" id="date">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="keyword">Search</label>
+                            <input type="text" name="keyword" id="keyword" placeholder="Key Word">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="show-list">View As</label>
+                            <select name="viev-list" id="show-list">
+                                <option value="1" selected data-icon='mdi-format-list-bulleted'>List</option>
+                                <option value="2" data-icon='mdi-calendar'>Mounth</option>
+                                <option value="3" data-icon='mdi-calendar-clock'>Day</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="color-2">Find Event</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="event-list">
+                        <figure class="event-card color-2">
+                            <a href="single-event.html" class="event-logo">
+                                <time datetime="2019-06-01">1 jun <br> 2019</time>
+                                <img src="img/event-1-big.jpg" alt="event-1">
+                            </a>
+                            <figcaption>
+                                <a href="single-event.html" class="h4">World Kids Day</a>
+                                <ul class="event-info-list">
+                                    <li><p><i class="mdi mdi-clock-outline"></i> 8:00 am - 10:00 pm</p></li>
+                                    <li><a href="https://goo.gl/maps/BYnYjfrqVMn" target="_blank"><i class="mdi mdi-map-marker"></i> 123 Broadway, NY 10006, USA</a></li>
+                                    <li><p><i class="mdi mdi-cash-multiple"></i> Free</p></li>
+                                </ul>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In non ullamcorper quam, at suscipit magna. Maecenas sit amet magna magna. Nullam aliquam dolor ut ipsum sagittis mollis. Vivamus porta eu augue in bibendum. Sed semper quam a ipsum accumsan placerat.</p>
+                                <a href="single-event.html" class="read-more">Read More  <i class="mdi mdi-chevron-right"></i></a>
+                            </figcaption>
+                        </figure>
+                        <figure class="event-card color-4">
+                            <a href="single-event.html" class="event-logo">
+                                <time datetime="2019-11-15">15 nov <br> 2019</time>
+                                <img src="img/event-2-big.jpg" alt="event-2">
+                            </a>
+                            <figcaption>
+                                <a href="single-event.html" class="h4">Parents Day</a>
+                                <ul class="event-info-list">
+                                    <li><p><i class="mdi mdi-clock-outline"></i> 8:00 am - 10:00 pm</p></li>
+                                    <li><a href="https://goo.gl/maps/BYnYjfrqVMn" target="_blank"><i class="mdi mdi-map-marker"></i> 123 Broadway, NY 10006, USA</a></li>
+                                    <li><p><i class="mdi mdi-cash-multiple"></i> Free</p></li>
+                                </ul>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In non ullamcorper quam, at suscipit magna. Maecenas sit amet magna magna. Nullam aliquam dolor ut ipsum sagittis mollis. Vivamus porta eu augue in bibendum. Sed semper quam a ipsum accumsan placerat.</p>
+                                <a href="single-event.html" class="read-more">Read More  <i class="mdi mdi-chevron-right"></i></a>
+                            </figcaption>
+                        </figure>
+                        <figure class="event-card color-1">
+                            <a href="single-event.html" class="event-logo">
+                                <time datetime="2019-11-23">23 nov <br> 2019</time>
+                                <img src="img/event-3.jpg" alt="event-1">
+                            </a>
+                            <figcaption>
+                                <a href="single-event.html" class="h4">Teachers Day</a>
+                                <ul class="event-info-list">
+                                    <li><p><i class="mdi mdi-clock-outline"></i> 8:00 am - 10:00 pm</p></li>
+                                    <li><a href="https://goo.gl/maps/BYnYjfrqVMn" target="_blank"><i class="mdi mdi-map-marker"></i> 123 Broadway, NY 10006, USA</a></li>
+                                    <li><p><i class="mdi mdi-cash-multiple"></i> 50$</p></li>
+                                </ul>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In non ullamcorper quam, at suscipit magna. Maecenas sit amet magna magna. Nullam aliquam dolor ut ipsum sagittis mollis. Vivamus porta eu augue in bibendum. Sed semper quam a ipsum accumsan placerat.</p>
+                                <a href="single-event.html" class="read-more">Read More  <i class="mdi mdi-chevron-right"></i></a>
+                            </figcaption>
+                        </figure>
+                        <figure class="event-card color-3">
+                            <a href="single-event.html" class="event-logo">
+                                <time datetime="2019-12-25">25 dec <br> 2019</time>
+                                <img src="img/event-4.jpg" alt="event-2">
+                            </a>
+                            <figcaption>
+                                <a href="single-event.html" class="h4">Christmas Party</a>
+                                <ul class="event-info-list">
+                                    <li><p><i class="mdi mdi-clock-outline"></i> 8:00 am - 10:00 pm</p></li>
+                                    <li><a href="https://goo.gl/maps/BYnYjfrqVMn" target="_blank"><i class="mdi mdi-map-marker"></i> 123 Broadway, NY 10006, USA</a></li>
+                                    <li><p><i class="mdi mdi-cash-multiple"></i> 100$</p></li>
+                                </ul>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In non ullamcorper quam, at suscipit magna. Maecenas sit amet magna magna. Nullam aliquam dolor ut ipsum sagittis mollis. Vivamus porta eu augue in bibendum. Sed semper quam a ipsum accumsan placerat.</p>
+                                <a href="single-event.html" class="read-more">Read More  <i class="mdi mdi-chevron-right"></i></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <!-- Begin pagination -->
+                    <ul class="my-pagination">
+                        <li><a href="#"><i class="mdi mdi-chevron-left"></i></a></li>
+                        <li><a href="#" class="active-pagination">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#"><i class="mdi mdi-chevron-right"></i></a></li>
+                    </ul>
+                    <!-- End pagination -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+<!-- End events content -->
+
+
+</body>
+
+{% endblock container %}

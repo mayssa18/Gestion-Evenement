@@ -1,0 +1,9 @@
+user_homepage:
+    path:     /
+    defaults: { _controller: UserBundle:Default:index }
+indexadmin:
+    path:     /indexadmin
+    defaults: { _controller: UserBundle:Default:indexadmin }
+mayssa:
+    path:     /mayssa
+    defaults: { _controller: UserBundle:Default:mayssa }
